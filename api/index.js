@@ -18,8 +18,8 @@ app.use('/auth', require('./routes/auth'));
 
 // other routes
 
-app.use((err, req, res, next) => {
-    console.error(err);
+app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+    // console.error(err);
     res.status(401).send(err + '');
 });
 
